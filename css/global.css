@@ -1,0 +1,46 @@
+/*
+=Global
+=================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+  font-size: 62.5%; /* make the default size = 10px */
+  -webkit-text-size-adjust: 100%; /* prevent fonr scaling in lanscape while allowing the user zoom on mobile */
+  --pink-text: #ffa891;
+  --blue-gray-text: #5b838d;
+  --dark-gray-text: #4d4d4d;
+  --main-bg-color: #FFFFFF;
+}
+/*
+=General style
+=================================== */
+body {
+  background-color: var(--main-bg-color);
+}
+body, button, input, text area, footer, a, p, h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-weight: 500;
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+/*
+=Link States
+=================================== */
+a {
+  text-decoration: none; /* remove the underline */
+  outline: none;
+}
+img {
+  width: 100%;
+}

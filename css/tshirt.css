@@ -1,0 +1,532 @@
+/*
+=Netflix Style
+=================================== */
+:root {
+  --main-text: #000000;
+  --white-text: #FFFFFF;
+  --saic-red: #ef3624;
+  --background: #231F20;
+}
+
+/*
+= Large Screen (Min-width: 981px)
+====================================================  */
+@media (min-width: 981px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 10rem;
+  }
+  /*
+  =Overview
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30rem; padding-right: 30rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--saic-red);
+  }
+  .overview p {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  .overview p em {
+    font-weight: 600;
+  }
+  /*
+  =Concept
+  =================================== */
+  .concept {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30rem; padding-right: 30rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--saic-red);
+  }
+  .concept p {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  .concept p em {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    padding: 0.75rem;
+    margin-left: 0.75rem; margin-right: 0.75rem;
+    margin-top: -0.75rem;
+    color: var(--white-text);
+    background-color: var(--main-text)
+  }
+  /*
+  =Sketch
+  =================================== */
+  .sketch {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30rem; padding-right: 30rem; padding-bottom: 0.5rem;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--saic-red);
+  }
+  .light,
+  .dark {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .light p,
+  .dark p {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  .light li,
+  .dark li {
+    display: flex;
+    flex-direction: row;
+  }
+  .light figure,
+  .dark figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .light img,
+  .dark img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .light img {
+   border: solid 0.5px var(--main-text);
+  }
+  /*
+  =New Feature Section
+  =================================== */
+  .application {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30rem; padding-right: 30rem; padding-bottom: 0.5rem;
+  }
+  #section4 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--saic-red);
+  }
+  .mock-up,
+  .mock-up ul,
+  .mock-up figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mock-up img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .mock-up figcaption a {
+    display: inline-block;
+    padding-bottom: 3rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+}
+
+/*
+= Resonsive - Small Screen (Max-width: 980px)
+====================================================  */
+@media (max-width: 980px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 10rem;
+    padding-top: 15rem; padding-bottom: 15rem;
+    background-color: var(--background);
+  }
+  /*
+  =Overview
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+    color: var(--saic-red);
+  }
+  .overview p {
+    font-size: 1.75rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  .overview p em {
+    font-weight: 600;
+  }
+  /*
+  =Concept
+  =================================== */
+  .concept {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+    color: var(--saic-red);
+  }
+  .concept p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.75rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  .concept p em {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    padding: 0.75rem;
+    margin-left: 0.75rem; margin-right: 0.75rem;
+    margin-top: -0.75rem;
+    color: var(--white-text);
+    background-color: var(--main-text)
+  }
+  /*
+  =Sketch
+  =================================== */
+  .sketch {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--saic-red);
+  }
+  .light,
+  .dark {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .light p,
+  .dark p {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  .light li,
+  .dark li {
+    display: flex;
+    flex-direction: row;
+  }
+  .light figure,
+  .dark figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .light img,
+  .dark img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .light img {
+   border: solid 0.5px var(--main-text);
+  }
+  /*
+  =New Feature Section
+  =================================== */
+  .application {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+  }
+  #section4 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--saic-red);
+  }
+  .mock-up,
+  .mock-up ul,
+  .mock-up figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mock-up img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .mock-up figcaption a {
+    display: inline-block;
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+}
+
+/*
+= Resonsive - Small Screen (Max-width: 560px)
+====================================================  */
+@media (max-width: 560px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 10rem;
+    padding-top: 25rem; padding-bottom: 25rem;
+    background-color: var(--background);
+  }
+  /*
+  =Overview
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--saic-red);
+  }
+  .overview p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  .overview p em {
+    font-weight: 600;
+  }
+  /*
+  =Concept
+  =================================== */
+  .concept {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--saic-red);
+  }
+  .concept p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  .concept p em {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding: 0.75rem;
+    margin-left: 0.75rem; margin-right: 0.75rem;
+    margin-top: -0.75rem;
+    color: var(--white-text);
+    background-color: var(--main-text)
+  }
+  /*
+  =Sketch
+  =================================== */
+  .sketch {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--saic-red);
+  }
+  .light,
+  .dark {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .light p,
+  .dark p {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+  }
+  .light li,
+  .dark li {
+    display: flex;
+    flex-direction: row;
+  }
+  .light figure,
+  .dark figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .light img,
+  .dark img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .light img {
+   border: solid 0.5px var(--main-text);
+  }
+  /*
+  =New Feature Section
+  =================================== */
+  .application {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+  }
+  #section4 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--saic-red);
+  }
+  .mock-up,
+  .mock-up ul,
+  .mock-up figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mock-up img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .mock-up figcaption a {
+    display: inline-block;
+    padding-bottom: 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+  }
+}

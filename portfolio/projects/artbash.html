@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META DATA -->
+    <meta charset="utf-8"/>
+
+    <!-- PAGE TITLE -->
+    <title>ArtBash 2023 | Point of Creation</title>
+
+    <!-- PAGE LINKS -->
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/responsive.hamburger.css">
+    <link rel="stylesheet" href="../../css/table-content.css">
+    <link rel="stylesheet" href="../../css/artbash.css">
+
+    <!-- SCRIPT -->
+    <script src="https://kit.fontawesome.com/f19e25184d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7fa40ab399.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <!-- Sticked Table Content -->
+    <script>
+      $(window).scroll(function(){
+        if($(this).scrollTop() >= 712.71) {
+          $(".table-content").addClass("sticked");
+        }
+        else {
+          $(".table-content").removeClass("sticked");
+        }
+      });
+    </script>
+
+    <!-- Carousel Autoplay -->
+    <script type="text/javascript">
+      var counter=1;
+      setInterval(function(){
+        document.getElementById('art' + counter).checked=true;
+        counter++;
+        if(counter > 8) {
+          counter=1;
+        }
+      }, 5000);
+    </script>
+
+  </head>
+
+
+  <body>
+    <!-- PAGE CONTAINER -->
+    <div class="page-wrapper">
+      <header>
+        <!-- CHECKBOX -->
+        <input class="checkbox" type="checkbox">
+
+        <!-- HAMBURGER LINES -->
+        <div class="hamburger">
+          <div class="wrapper">
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+          <a href="../../Homepage.html">
+            <img src="../../images/logo/logo.png" alt="mylogo"></img>
+          </a>
+        </div>
+
+        <!-- MAIN MENU -->
+        <nav class="container">
+           <div class="navbar" id="navbar">
+             <ul class="link" id="link" >
+               <li><a href="../../About.html" id="about">About</a></li>
+               <li><a href="../projects.html" id="portfolio">Portfolio</a></li>
+             </ul>
+             <ul class="social" id="social">
+               <li><a href="https://drive.google.com/file/d/1Q0aM43fiNd-BYeIdHgWvyP_aGE3xXjij/view?usp=sharing"><i class="fa-regular fa-envelope fa-2xl"></i></a></li>
+             </ul>
+           </div>
+        </nav>
+      </header>
+
+      <!-- Banner -->
+      <div class="banner">
+        <img src="../../images/artbash/banner1.gif"></img>
+      </div>
+
+      <!-- Table of Content -->
+      <mainnav class="table-content">
+        <ul class="step">
+          <li class="section-content">
+            <a href="#section1" id="section-no"><p>1</p></a>
+            <p id="section-name">Overview</p>
+          </li>
+        </ul>
+        <ul class="step">
+          <li class="section-content">
+            <a href="#section2" id="section-no"><p>2</p></a>
+            <p id="section-name">Concept</p>
+          </li>
+        </ul>
+        <ul class="step">
+          <li class="section-content">
+            <a href="#section3" id="section-no"><p>3</p></a>
+            <p id="section-name">System</p>
+          </li>
+        </ul>
+        <ul class="step">
+          <li class="section-content">
+            <a href="#section4" id="section-no"><p>4</p></a>
+            <p id="section-name">Application</p>
+          </li>
+        </ul>
+      </mainnav>
+
+      <!-- Challenge -->
+      <section class="overview">
+        <h1 class="section1" id="section1">Overview</h1>
+        <p>This is a spec work that proposed a new identity systems and its application for ArtBash 2023 - an annual exhibition of Contemporary Practice Department of SAIC. </p>
+      </section>
+
+      <!-- Concept -->
+      <section class="concept">
+        <h1 class="section2" id="section2">Concept</h1>
+        <p>The contemporary practices for freshmen years at SAIC is the process of <a>exploring different medium, tactics, concept, etc.,</a> and <a>exploding various of your possibilities.<a> Hence, the identity for ArtBash 2023 will become a Point Of Creation, which demonstrates the <a>Big Bang</a> moment of the <a>Art Universe.</a></p>
+        <p>ArtBash becomes the <a>starting point</a> of the Art Universe, in which student will <a>explode their creativity in 2D arts, 3D arts, virtual arts, films, performances, book arts, etc.</a></p>
+        <p><a>KEYWORDS:</a> Big Bang, explosion, creation</p>
+      </section>
+
+      <!-- System -->
+      <section class="system">
+        <p class="section3" id="section3">System</p>
+        <li class="system-list">
+          <figure>
+            <img src="../../images/artbash/color-system.png"></img>
+          </figure>
+          <figure>
+            <img src="../../images/artbash/type-system.png"></img>
+          </figure>
+        </li>
+      </section>
+
+
+      <!-- Application -->
+      <section class="application">
+        <p class="section4" id="section4">Application</p>
+
+        <!--Event Posters-->
+        <div class="due-date-event">
+          <h1 class="event">Event Poster</h1>
+          <div class="slider">
+            <input type="radio" name="slide" id="art1" checked>
+            <input type="radio" name="slide" id="art2">
+            <input type="radio" name="slide" id="art3">
+            <input type="radio" name="slide" id="art4">
+            <input type="radio" name="slide" id="art5">
+            <input type="radio" name="slide" id="art6">
+            <input type="radio" name="slide" id="art7">
+            <div class="event-posters">
+              <img src="../../images/artbash/artbash-mock-up1.png" class="art-img1" alt="art1"></img>
+              <img src="../../images/artbash/artbash-mock-up2.png" class="art-img2" alt="art2"></img>
+              <img src="../../images/artbash/artbash-mock-up3.png" class="art-img3" alt="art3"></img>
+              <img src="../../images/artbash/artbash-mock-up4.png" class="art-img4" alt="art4"></img>
+              <img src="../../images/artbash/artbash-mock-up5.png" class="art-img5" alt="art5"></img>
+              <img src="../../images/artbash/artbash-mock-up6.png" class="art-img6" alt="art6"></img>
+              <img src="../../images/artbash/artbash-mock-up7.png" class="art-img7" alt="art7"></img>
+            </div>
+            <div class="gallery-nav">
+              <label class="dots" id="dot1" for="art1"></label>
+              <label class="dots" id="dot2" for="art2"></label>
+              <label class="dots" id="dot3" for="art3"></label>
+              <label class="dots" id="dot4" for="art4"></label>
+              <label class="dots" id="dot5" for="art5"></label>
+              <label class="dots" id="dot6" for="art6"></label>
+              <label class="dots" id="dot7" for="art7"></label>
+            </div>
+          </div>
+        </div>
+
+        <!--Main Poster-->
+        <div class="main-poster">
+          <h1>Main Poster</h1>
+          <img src="../../images/artbash/artbash-mock-up8.png" alt="main1"></img>
+        </div>
+
+        <!--Directory-->
+        <div class="directory">
+          <h1>School Directory</h1>
+          <img src="../../images/artbash/directory.gif"></img>
+        </div>
+
+        <!--Instagram-->
+        <div class ="instagram">
+          <h1>Instagram</h1>
+          <figure class="instagram-samples">
+            <img src="../../images/artbash/ig1.png"></img>
+            <img src="../../images/artbash/ig2.png"></img>
+            <img src="../../images/artbash/ig3.png"></img>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Other Works -->
+      <div class="other-works">
+        <a id="works" href="../projects.html">My projects...</a>
+        <ul id="suggestion">
+          <figure>
+            <img src="../../images/projects/nutshell.gif"></img>
+            <figcaption><a href="../projects/nutshell.studies.html"><p>NUTSHELL STUDIES</p><p>UX UI PROJECT</p></a></figcaption>
+          </figure>
+          <figure>
+            <img src="../../images/projects/chifilmfest.gif"></img>
+            <figcaption><a href="../projects/chifilmfest.html"><p>#CHIFILMFEST</p><p>NEW IDENTITY SYSTEM</p></a></figcaption>
+          </figure>
+          <figure>
+            <img src="../../images/projects/netflix.gif"></img>
+            <figcaption><a href="../projects/netflix.html"><p>NETFLIX BUDDIES</p><p>INSTGRAM CAMPAIGN</p></a></figcaption>
+          </figure>
+        </ul>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer">
+          <ul class="footer-social" id="footer-social">
+            <li><a href="https://vimeo.com/user202263023"><i class="fa-brands fa-vimeo-v fa-2xl"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/katrina-tuyet-trinh/"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a></li>
+            <li><a href="https://www.behance.net/katrinatrinh"><i class="fa-brands fa-behance fa-2xl"></i></a></li>
+          </ul>
+          <li class="copyright"><a>All works copyright © Katrina Trinh 2023</a></li>
+        </div>
+      </footer>
+
+    </div>
+    <!-- END PAGE WRAPPER -->
+  </body>
+
+
+</html>

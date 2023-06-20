@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META DATA -->
+    <meta charset="utf-8"/>
+
+    <!-- PAGE TITLE -->
+    <title>Chicago Typeface Collage</title>
+
+    <!-- PAGE LINKS -->
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/responsive.hamburger.css">
+    <link rel="stylesheet" href="../../css/table-content.css">
+    <link rel="stylesheet" href="../../css/typeface-collage.css">
+
+    <!-- SCRIPT -->
+    <script src="https://kit.fontawesome.com/f19e25184d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7fa40ab399.js" crossorigin="anonymous"></script>
+
+    <!-- Sticked Table Content -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+      $(window).scroll(function(){
+        if($(this).scrollTop() >= 712.71) {
+          $(".table-content").addClass("sticked");
+        }
+        else {
+          $(".table-content").removeClass("sticked");
+        }
+      });
+    </script>
+
+    <!-- Carousel Autoplay -->
+    <script type="text/javascript">
+      var counter=1;
+      setInterval(function(){
+        document.getElementById('art' + counter).checked=true;
+        counter++;
+        if(counter > 6) {
+          counter=1;
+        }
+      }, 5000);
+    </script>
+  </head>
+
+
+  <body>
+    <!-- PAGE CONTAINER -->
+    <div class="page-wrapper">
+      <header>
+        <!-- CHECKBOX -->
+        <input class="checkbox" type="checkbox">
+
+        <!-- HAMBURGER LINES -->
+        <div class="hamburger">
+          <div class="wrapper">
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+          <a href="../../Homepage.html">
+            <img src="../../images/logo/logo.png" alt="mylogo"></img>
+          </a>
+        </div>
+
+        <!-- MAIN MENU -->
+        <nav class="container">
+           <div class="navbar" id="navbar">
+             <ul class="link" id="link" >
+               <li><a href="../../About.html" id="about">About</a></li>
+               <li><a href="../projects.html" id="portfolio">Portfolio</a></li>
+             </ul>
+             <ul class="social" id="social">
+               <li><a href="https://drive.google.com/file/d/1Q0aM43fiNd-BYeIdHgWvyP_aGE3xXjij/view?usp=sharing"><i class="fa-regular fa-envelope fa-2xl"></i></a></li>
+             </ul>
+           </div>
+        </nav>
+      </header>
+
+      <!-- Banner -->
+      <div class="banner">
+        <img src="../../images/type-collage/banner.png"></img>
+      </div>
+
+      <!-- Overview -->
+      <section class="overview">
+        <h1 id="section1">Collection of 6 collages created from Chicago Loop Typography Texture | Spring 2020</h1>
+        <ul class="overview-list">
+          <a>6’’x6’’<a>
+          <a>CARDBOARD</a>
+          <a>This project emphasized the unique typeface texture of Chicago Loop. I collected photos of road signs, restaurant sign board, graphite drawing of Downtown Chicago and comprised them in a square frame to create overlapping and overwhelming feeling. Since most of the typeface is originally in lighter color, black hard-board was chosen to be the background for this collection.</a>
+        </ul>
+      </section>
+
+
+      <!-- Eraser -->
+      <section class="collage-gallery">
+          <h1 id="section2"></h1>
+          <div class="slider">
+            <input type="radio" name="slide" id="art1" checked>
+            <input type="radio" name="slide" id="art2">
+            <input type="radio" name="slide" id="art3">
+            <input type="radio" name="slide" id="art4">
+            <input type="radio" name="slide" id="art5">
+            <input type="radio" name="slide" id="art6">
+            <div class="type-collage">
+              <img src="../../images/type-collage/type-collage1.png" class="art-img1" alt="art1"></img>
+              <img src="../../images/type-collage/type-collage2.png" class="art-img2" alt="art2"></img>
+              <img src="../../images/type-collage/type-collage3.png" class="art-img3" alt="art3"></img>
+              <img src="../../images/type-collage/type-collage4.png" class="art-img4" alt="art4"></img>
+              <img src="../../images/type-collage/type-collage5.png" class="art-img5" alt="art5"></img>
+              <img src="../../images/type-collage/type-collage6.png" class="art-img6" alt="art6"></img>
+            </div>
+            <div class="gallery-nav">
+              <label class="dots" id="dot1" for="art1"></label>
+              <label class="dots" id="dot2" for="art2"></label>
+              <label class="dots" id="dot3" for="art3"></label>
+              <label class="dots" id="dot4" for="art4"></label>
+              <label class="dots" id="dot5" for="art5"></label>
+              <label class="dots" id="dot6" for="art6"></label>
+            </div>
+          </div>
+      </section>
+
+      <!-- Other Works -->
+      <div class="other-works">
+        <a id="works" href="../print.html">My print works...</a>
+        <ul id="suggestion">
+          <figure>
+            <img src="../../images/print/architecture.collage.png"></img>
+            <figcaption><a href="../print/architecture.collage.html"><p>CHICAGO LANDSCAPE</p><p>COLLAGES SERIES</p></a></figcaption>
+          </figure>
+          <figure>
+            <img src="../../images/print/coffee.phin.png"></img>
+            <figcaption><a href="../print/coffee.phin.html"><p>VIETNAMESE COFFEE PHIN</p><p>PRODUCT POSTER</p></a></figcaption>
+          </figure>
+          <figure>
+            <img src="../../images/print/eraser.infographic.png"></img>
+            <figcaption><a href="../print/eraser.infographic.html"><p>ERASER CYCLE SYSTEMS</p><p>INFOGRAPHIC</p></a></figcaption>
+          </figure>
+        </ul>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer">
+          <ul class="footer-social" id="footer-social">
+            <li><a href="https://vimeo.com/user202263023"><i class="fa-brands fa-vimeo-v fa-2xl"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/katrina-tuyet-trinh/"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a></li>
+            <li><a href="https://www.behance.net/katrinatrinh"><i class="fa-brands fa-behance fa-2xl"></i></a></li>
+          </ul>
+          <li class="copyright"><a>All works copyright © Katrina Trinh 2023</a></li>
+        </div>
+      </footer>
+
+    </div>
+    <!-- END PAGE WRAPPER -->
+  </body>
+
+
+</html>

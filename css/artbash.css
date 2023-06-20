@@ -1,0 +1,799 @@
+:root {
+  --pink: #af4487;
+  --main-text: #000000;
+  --lower-transperant-text: rgba(0, 0, 0, 0.5);
+}
+
+/*
+= Large Screen (Min-width: 981px)
+====================================================  */
+@media (min-width: 981px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 2rem;
+  }
+  .banner img {
+    display: flex;
+    height: 695px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /*
+  =Overview Section
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  .overview p {
+    font-size: 1.75rem;
+    line-height: 1.75;
+    font-weight: 400;
+    color: var(--main-text);
+  }
+
+  /*
+  =Concept Section
+  =================================== */
+  .concept {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 8rem; padding-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  .concept p {
+    display: inline-block;
+    padding-top: 0.5rem; padding-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 1.75;
+    color: var(--main-text);
+    padding-bottom: 2rem;
+  }
+  .concept p a {
+    font-weight: 600 !important;
+  }
+  /*
+  =Mark Development Section
+  =================================== */
+  .system {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  .system-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .system-list figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .system-list img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  /*
+  =Application Section
+  =================================== */
+  .application {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+  }
+  #section4 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  /* Event Posters */
+  .due-date-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .event {
+    display: inline-block;
+    padding-top: 1rem; padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .slider input {
+    display: none;
+  }
+  .event-posters {
+    display: flex;;
+    width: 100%;
+  }
+  .event-posters img {
+    height: 100%;
+    width: 100%;
+  }
+  .gallery-nav {
+    display:flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  .gallery-nav  label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid var(--lower-transperant-text) 1.5px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+  }
+  .dots:hover {background-color: var(--lower-transperant-text);}
+  #art1:checked ~ .event-posters > .art-img1 {
+    margin-left: 0;
+  }
+  #art2:checked ~ .event-posters > .art-img2 {
+    margin-left: -100%;
+  }
+  #art3:checked ~ .event-posters > .art-img3 {
+    margin-left: -200%;
+  }
+  #art4:checked ~ .event-posters > .art-img3 {
+    margin-left: -300%;
+  }
+  #art5:checked ~ .event-posters > .art-img3 {
+    margin-left: -400%;
+  }
+  #art6:checked ~ .event-posters > .art-img3 {
+    margin-left: -500%;
+  }
+  #art7:checked ~ .event-posters > .art-img3 {
+    margin-left: -600%;
+  }
+  #art1:checked ~ .gallery-nav #dot1,
+  #art2:checked ~ .gallery-nav #dot2,
+  #art3:checked ~ .gallery-nav #dot3,
+  #art4:checked ~ .gallery-nav #dot4,
+  #art5:checked ~ .gallery-nav #dot5,
+  #art6:checked ~ .gallery-nav #dot6,
+  #art7:checked ~ .gallery-nav #dot7 {
+    background-color: var(--lower-transperant-text);
+  }
+  /* Main Poster */
+  .main-poster {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .main-poster h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem; padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  /* School Directory */
+  .directory {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .directory h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem; padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  /* Instagram */
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .instagram h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem; padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .instagram-samples {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .instagram-samples img {
+    display: inline-block;
+    width: 416px;
+    padding: 1rem;
+  }
+}
+
+/*
+= Resonsive - Small Screen (Max-width: 980px)
+====================================================  */
+@media (max-width: 980px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 12rem;
+  }
+  .banner img {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /*
+  =Overview Section
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  .overview p {
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+    color: var(--main-text);
+  }
+
+  /*
+  =Concept Section
+  =================================== */
+  .concept {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 8rem; padding-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  .concept p {
+    display: inline-block;
+    padding-top: 0.5rem; padding-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    color: var(--main-text);
+    padding-bottom: 2rem;
+  }
+  .concept p a {
+    font-weight: 600 !important;
+  }
+  /*
+  =Mark Development Section
+  =================================== */
+  .system {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  .system-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .system-list figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .system-list img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  /*
+  =Application Section
+  =================================== */
+  .application {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+  }
+  #section4 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  /* Event Posters */
+  .due-date-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .event {
+    display: inline-block;
+    padding-top: 1rem; padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .slider input {
+    display: none;
+  }
+  .event-posters {
+    display: flex;;
+    width: 100%;
+  }
+  .event-posters img {
+    height: 100%;
+    width: 100%;
+  }
+  .gallery-nav {
+    display:flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  .gallery-nav  label {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: solid var(--lower-transperant-text) 1.5px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+  }
+  .dots:hover {background-color: var(--lower-transperant-text);}
+  #art1:checked ~ .event-posters > .art-img1 {
+    margin-left: 0;
+  }
+  #art2:checked ~ .event-posters > .art-img2 {
+    margin-left: -100%;
+  }
+  #art3:checked ~ .event-posters > .art-img3 {
+    margin-left: -200%;
+  }
+  #art4:checked ~ .event-posters > .art-img3 {
+    margin-left: -300%;
+  }
+  #art5:checked ~ .event-posters > .art-img3 {
+    margin-left: -400%;
+  }
+  #art6:checked ~ .event-posters > .art-img3 {
+    margin-left: -500%;
+  }
+  #art7:checked ~ .event-posters > .art-img3 {
+    margin-left: -600%;
+  }
+  #art1:checked ~ .gallery-nav #dot1,
+  #art2:checked ~ .gallery-nav #dot2,
+  #art3:checked ~ .gallery-nav #dot3,
+  #art4:checked ~ .gallery-nav #dot4,
+  #art5:checked ~ .gallery-nav #dot5,
+  #art6:checked ~ .gallery-nav #dot6,
+  #art7:checked ~ .gallery-nav #dot7 {
+    background-color: var(--lower-transperant-text);
+  }
+  /* Main Poster */
+  .main-poster {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .main-poster h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem; padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  /* School Directory */
+  .directory {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .directory h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem; padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  /* Instagram */
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .instagram h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem; padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .instagram-samples {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .instagram-samples img {
+    display: inline-block;
+    width: 250px;
+    padding: 1rem;
+  }
+}
+/*
+= Resonsive - Small Screen (Max-width: 560px)
+====================================================  */
+@media (max-width: 560px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 12rem;
+  }
+  .banner img {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /*
+  =Overview Section
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  .overview p {
+    font-size: 1.25rem;
+    line-height: 3.25rem;
+    font-weight: 400;
+    color: var(--main-text);
+  }
+
+  /*
+  =Concept Section
+  =================================== */
+  .concept {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 8rem; padding-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  .concept p {
+    display: inline-block;
+    padding-top: 0.5rem; padding-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 3.25rem;
+    color: var(--main-text);
+    padding-bottom: 2rem;
+  }
+  .concept p a {
+    font-weight: 600 !important;
+  }
+  /*
+  =Mark Development Section
+  =================================== */
+  .system {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  .system-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .system-list figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .system-list img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  /*
+  =Application Section
+  =================================== */
+  .application {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+  }
+  #section4 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  /* Event Posters */
+  .due-date-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .event {
+    display: inline-block;
+    padding-top: 1rem; padding-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .slider input {
+    display: none;
+  }
+  .event-posters {
+    display: flex;;
+    width: 100%;
+  }
+  .event-posters img {
+    height: 100%;
+    width: 100%;
+  }
+  .gallery-nav {
+    display:flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  .gallery-nav  label {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: solid var(--lower-transperant-text) 1.5px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+  }
+  .dots:hover {background-color: var(--lower-transperant-text);}
+  #art1:checked ~ .event-posters > .art-img1 {
+    margin-left: 0;
+  }
+  #art2:checked ~ .event-posters > .art-img2 {
+    margin-left: -100%;
+  }
+  #art3:checked ~ .event-posters > .art-img3 {
+    margin-left: -200%;
+  }
+  #art4:checked ~ .event-posters > .art-img3 {
+    margin-left: -300%;
+  }
+  #art5:checked ~ .event-posters > .art-img3 {
+    margin-left: -400%;
+  }
+  #art6:checked ~ .event-posters > .art-img3 {
+    margin-left: -500%;
+  }
+  #art7:checked ~ .event-posters > .art-img3 {
+    margin-left: -600%;
+  }
+  #art1:checked ~ .gallery-nav #dot1,
+  #art2:checked ~ .gallery-nav #dot2,
+  #art3:checked ~ .gallery-nav #dot3,
+  #art4:checked ~ .gallery-nav #dot4,
+  #art5:checked ~ .gallery-nav #dot5,
+  #art6:checked ~ .gallery-nav #dot6,
+  #art7:checked ~ .gallery-nav #dot7 {
+    background-color: var(--lower-transperant-text);
+  }
+  /* Main Poster */
+  .main-poster {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .main-poster h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem; padding-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  /* School Directory */
+  .directory {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .directory h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem; padding-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  /* Instagram */
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .instagram h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem; padding-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .instagram-samples {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .instagram-samples img {
+    display: inline-block;
+    width: 160px;
+    padding: 1rem;
+  }
+}
