@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META DATA -->
+    <meta charset="utf-8"/>
+
+    <!-- PAGE TITLE -->
+    <title>Birdnest Magazine</title>
+
+    <!-- PAGE LINKS -->
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/responsive.hamburger.css">
+    <link rel="stylesheet" href="../../css/table-content.css">
+    <link rel="stylesheet" href="../../css/nest.css">
+
+    <!-- SCRIPT -->
+    <script src="https://kit.fontawesome.com/f19e25184d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7fa40ab399.js" crossorigin="anonymous"></script>
+
+    <!-- Sticked Table Content -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+      $(window).scroll(function(){
+        if($(this).scrollTop() >= 712.71) {
+          $(".table-content").addClass("sticked");
+        }
+        else {
+          $(".table-content").removeClass("sticked");
+        }
+      });
+    </script>
+
+    <!-- Carousel Autoplay -->
+    <script type="text/javascript">
+      var counter=1;
+      setInterval(function(){
+        document.getElementById('art' + counter).checked=true;
+        counter++;
+        if(counter > 7) {
+          counter=1;
+        }
+      }, 5000);
+    </script>
+
+  </head>
+
+
+  <body>
+    <!-- PAGE CONTAINER -->
+    <div class="page-wrapper">
+      <header>
+        <!-- CHECKBOX -->
+        <input class="checkbox" type="checkbox">
+
+        <!-- HAMBURGER LINES -->
+        <div class="hamburger">
+          <div class="wrapper">
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+          <a href="../../Homepage.html">
+            <img src="../../images/logo/logo.png" alt="mylogo"></img>
+          </a>
+        </div>
+
+        <!-- MAIN MENU -->
+        <nav class="container">
+           <div class="navbar" id="navbar">
+             <ul class="link" id="link" >
+               <li><a href="../../About.html" id="about">About</a></li>
+               <li><a href="../projects.html" id="portfolio">Portfolio</a></li>
+             </ul>
+             <ul class="social" id="social">
+               <li><a href="https://drive.google.com/file/d/1Q0aM43fiNd-BYeIdHgWvyP_aGE3xXjij/view?usp=sharing"><i class="fa-regular fa-envelope fa-2xl"></i></a></li>
+             </ul>
+           </div>
+        </nav>
+      </header>
+
+      <!-- Banner -->
+      <div class="banner">
+        <img src="../../images/nest/banner.png"></img>
+      </div>
+
+      <!-- Table of Content -->
+      <mainnav class="table-content">
+        <ul class="step">
+          <li class="section-content">
+            <a href="#section1" id="section-no">1</a>
+            <a id="section-name">Overview</a>
+          </li>
+        </ul>
+        <ul class="step">
+          <li class="section-content">
+            <a href="#section2" id="section-no">2</a>
+            <a id="section-name">Concept</a>
+          </li>
+        </ul>
+        <ul class="step">
+          <li class="section-content">
+            <a href="#section3" id="section-no">3</a>
+            <a id="section-name">Book Design</a>
+          </li>
+        </ul>
+        <ul class="step">
+          <li class="section-content">
+            <a href="#section4" id="section-no">4</a>
+            <a id="section-name">Mock-up</a>
+          </li>
+        </ul>
+      </mainnav>
+
+      <!-- Overview -->
+      <section class="overview">
+        <h1 id="section1">Overview</h1>
+        <p><em>Avian Architecture - Cup Shaped Nest</em> is an illustrated book excerpts from <em>“Avian Architecture: How Birds Design, Engineer, and Build”</em> by Peter Goodfellow. The chosen core text cover full know of cup-shaped nest with multiple narrative artworks.<p>
+        <div>
+          <li class="description">
+            <p>10 X 7.5’’ Hand Bound Book</p>
+            <li class="typeface">
+              <h2>Typeface</h2>
+              <p>ITC Franklin Gothic Std | Title & Header</p>
+              <p>Garamond Premier Pro | Main Text</p>
+            </li>
+          </li>
+        </div>
+      </section>
+
+      <!-- Concept -->
+      <section class="concept">
+          <h1 id="section2">Concept</h1>
+          <ul>
+            <p>The main concept of the book is student notesbook of the birdnest designing, engineering and building progress. Large spread of hand-drawing illustration with paints drop giving the raw and mature vibe to book. </p>
+            <div>
+              <h2>Book Structure</h2>
+              <li>
+                <p>2 columns/ page system</p>
+                <p>Full spread of illustration with interative text details</p>
+              </li>
+            </div>
+            <img src="../../images/nest/nest-concept.png" class="book-concept" alt="book-concept"></img>
+          </ul>
+      </section>
+
+      <!-- Book Design -->
+      <section class="book-design">
+        <h1 id="section3">Book Design</h1>
+        <div style="padding:66.67% 0 0 0;position:relative;">
+          <iframe src="https://player.vimeo.com/video/838166209?h=fdf03211c1&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+      </section>
+
+
+      <!--Mock-up -->
+      <section class="mock-up">
+        <h1 id="section4">Mock-up</h1>
+        <div class="slider">
+          <input type="radio" name="slide" id="art1" checked>
+          <input type="radio" name="slide" id="art2">
+          <input type="radio" name="slide" id="art3">
+          <input type="radio" name="slide" id="art4">
+          <input type="radio" name="slide" id="art5">
+          <input type="radio" name="slide" id="art6">
+          <input type="radio" name="slide" id="art7">
+          <div class="book-mockup">
+            <img src="../../images/nest/avian1.png" class="art-img1" alt="art1"></img>
+            <img src="../../images/nest/avian2.png" class="art-img2" alt="art2"></img>
+            <img src="../../images/nest/avian3.png" class="art-img3" alt="art3"></img>
+            <img src="../../images/nest/avian4.png" class="art-img4" alt="art4"></img>
+            <img src="../../images/nest/avian5.png" class="art-img5" alt="art5"></img>
+            <img src="../../images/nest/avian6.png" class="art-img6" alt="art6"></img>
+            <img src="../../images/nest/avian7.png" class="art-img7" alt="art7"></img>
+          </div>
+          <div class="gallery-nav">
+            <label class="dots" id="dot1" for="art1"></label>
+            <label class="dots" id="dot2" for="art2"></label>
+            <label class="dots" id="dot3" for="art3"></label>
+            <label class="dots" id="dot4" for="art4"></label>
+            <label class="dots" id="dot5" for="art5"></label>
+            <label class="dots" id="dot6" for="art6"></label>
+            <label class="dots" id="dot7" for="art7"></label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other Works -->
+      <div class="other-works">
+        <a id="works" href="../print.html">My print works...</a>
+        <ul id="suggestion">
+          <figure>
+            <img src="../../images/print/david.smith.png"></img>
+            <figcaption><a href="../print/david.smith.html"><p>THE FIELD OF DAVID SMITH</p><p>BOOK DESIGN</p></a></figcaption>
+          </figure>
+          <figure>
+            <img src="../../images/print/moma.png"></img>
+            <figcaption><a href="../print/Moma.poster.html"><p>PEOPLE & CHAOS</p><p>EVENT POSTER</p></a></figcaption>
+          </figure>
+          <figure>
+            <img src="../../images/print/mirror.png"></img>
+            <figcaption><a href="../print/mirror.city.html"><p>MIRROR CITY</p><p>BOOK DESIGN</p></a></figcaption>
+          </figure>
+        </ul>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer">
+          <ul class="footer-social" id="footer-social">
+            <li><a href="https://vimeo.com/user202263023"><i class="fa-brands fa-vimeo-v fa-2xl"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/katrina-tuyet-trinh/"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a></li>
+            <li><a href="https://www.behance.net/katrinatrinh"><i class="fa-brands fa-behance fa-2xl"></i></a></li>
+          </ul>
+          <li class="copyright"><a>All works copyright © Katrina Trinh 2023</a></li>
+        </div>
+      </footer>
+
+    </div>
+    <!-- END PAGE WRAPPER -->
+  </body>
+
+
+</html>

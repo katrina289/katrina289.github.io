@@ -1,0 +1,205 @@
+.gallery {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery ul {
+  padding: 1rem;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+}
+.gallery figure {
+  position: relative;
+  padding: 0.25rem;
+}
+.gallery img{
+  height: 50rem;
+  width: 50rem;
+  padding: 0.25rem;
+}
+.gallery figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gallery a{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  color: transparent;
+  position: absolute;
+  top: 0.25rem; right: 0.25rem; bottom: 0.25rem; left: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.gallery a:hover {
+  background-color: rgba(91, 131, 141, 1);
+  color: white;
+}
+
+/*
+= Large Screen (Min-width: 981px)
+====================================================  */
+@media (min-width: 981px) {
+  .gallery {
+    margin-top: 3rem;
+  }
+  .portfolio-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .portfolio-menu li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .projects,
+  .print {
+    display: inline-block;
+    padding: 1rem 1rem;
+  }
+  .projects a,
+  .print a {
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 2;
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: 2px;
+    color: var(--pink-text);
+  }
+  .projects a:hover {
+    -webkit-text-fill-color: var(--blue-gray-text);
+    -webkit-text-stroke-color: var(--blue-gray-text);
+  }
+  .print a{
+    -webkit-text-fill-color: transparent;
+  }
+  .print a:hover {
+    -webkit-text-stroke-color: var(--blue-gray-text);
+  }
+  #portfolio {
+    text-decoration: underline !important;
+    text-underline-offset: 20% !important;
+    color: var(--blue-gray-text) !important;
+  }
+}
+/*
+= Resonsive - Small Screen (Max-width: 980px)
+====================================================  */
+
+@media (max-width: 980px) {
+  .gallery {
+    margin-top: 3rem;
+  }
+  .portfolio-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 13rem;
+  }
+  .portfolio-menu li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .projects,
+  .print {
+    display: inline-block;
+    padding: 1rem 1rem;
+  }
+  .projects a,
+  .print a {
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 2;
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: 2px;
+    color: var(--pink-text);
+  }
+  .projects a:hover {
+    -webkit-text-fill-color: var(--blue-gray-text);
+    -webkit-text-stroke-color: var(--blue-gray-text);
+  }
+  .print a{
+    -webkit-text-fill-color: transparent;
+  }
+  .print a:hover {
+    -webkit-text-stroke-color: var(--blue-gray-text);
+  }
+  #portfolio {
+    text-decoration: underline !important;
+    text-underline-offset: 20% !important;
+    color: var(--blue-gray-text) !important;
+  }
+}
+/*
+= Resonsive - Small Screen (Max-width: 560px)
+====================================================  */
+@media (max-width: 560px) {
+  .gallery {
+    margin-top: 3rem;
+  }
+  .portfolio-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 13rem;
+  }
+  .portfolio-menu li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .projects,
+  .print {
+    display: inline-block;
+    padding: 1rem 1rem;
+  }
+  .projects a,
+  .print a {
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 2;
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: 2px;
+    color: var(--pink-text);
+  }
+  .projects a:hover {
+    -webkit-text-fill-color: var(--blue-gray-text);
+    -webkit-text-stroke-color: var(--blue-gray-text);
+  }
+  .print a{
+    -webkit-text-fill-color: transparent;
+  }
+  .print a:hover {
+    -webkit-text-stroke-color: var(--blue-gray-text);
+  }
+  #portfolio {
+    text-decoration: underline !important;
+    text-underline-offset: 20% !important;
+    color: var(--blue-gray-text) !important;
+  }
+}

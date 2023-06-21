@@ -1,0 +1,1283 @@
+:root {
+  --red-rgb: #FF0000;
+  --main-text: #000000;
+}
+
+/*
+= Large Screen (Min-width: 981px)
+====================================================  */
+@media (min-width: 981px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--main-text);
+  }
+
+  /*
+  =Overview Section
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  .overview p {
+    font-size: 1.75rem;
+    line-height: 1.75;
+    font-weight: 400;
+    color: var(--main-text);
+  }
+  .overview p em {
+    font-weight: 600 !important;
+  }
+
+  /*
+  =Idea Section
+  =================================== */
+  .idea {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 8rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  .idea p {
+    display: inline-block;
+    padding-top: 0.5rem; padding-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 1.75;
+    color: var(--main-text);
+  }
+  /*
+  =Mark Development Section
+  =================================== */
+  .mark-development {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  .mark {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .mark figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mark img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .mark a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  .mark-animation {
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+  .mark-animation img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .mark-animation a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  /*
+  =System Section
+  =================================== */
+  .system {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+  }
+  #section4 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  .system-list {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .system-list figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .system-list img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  /*
+  =Application Section
+  =================================== */
+  .application {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+  }
+  #section5 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  /* Stationery
+  =================================== */
+  .stationery {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+  .stationery p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.5;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .stationery img {
+    display: inline-block;
+    margin-top: -5rem;
+  }
+  .stationery a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+  }
+  /* Print Ad
+  =================================== */
+  .print-ad {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+  }
+  .print-ad p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.5;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .print-ad-sample {
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+  .print-ad-sample figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .print-ad-sample img {
+    display: inline-block;
+    padding: 0.5rem;
+  }
+  .print-ad-sample a {
+    display: inline-block;
+    padding-top: 0.5rem; padding-bottom: 4rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  /* Award Mark
+  =================================== */
+  .award {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .award p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.5;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .award figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  .award ul {
+    display: flex;
+    flex: column;
+    padding: 0.25rem;
+  }
+  .award img {
+    display: inline-block;
+    padding-left: 0.25rem; padding-right: 0.25rem;
+  }
+  /* Website
+  =================================== */
+  .website {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .website p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.5;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .website img {
+    display: inline-block;
+    padding: 0.25rem;
+    margin-top:-3rem;
+  }
+  /* Instagram Posts
+  =================================== */
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Instagram Profile */
+  .ins-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.5;
+    text-transform: uppercase;
+    color: var(--main-text)
+  }
+  .ins-profile {
+    display: flex;
+    flex-direction: row;
+  }
+  .ins-sample {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ins-sample img, .ins-sample figcaption {
+    width: 416px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .ins-sample figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-sample p {
+    display: inline-block;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--main-text);
+  }
+  /* Instagram Highlight */
+  .ins-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  .highlight-icon {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 2.5;
+    color: var(--main-text);
+  }
+  .iconography {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .ins-highlight figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-highlight img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .ins-highlight p {
+    display: inline-block;
+    margin-top: -3rem;
+    padding: 1rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  /* Instagram Post */
+  .ins-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .ins-post p {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: var(--main-text);
+  }
+  .ins-post figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .ins-post img {
+    width: 416px;
+    display: inline-block;
+    padding: 1.5rem;
+  }
+}
+
+/*
+= Resonsive - Small Screen (Max-width: 980px)
+====================================================  */
+@media (max-width: 980px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 12rem;
+    padding-top: 15rem; padding-bottom: 15rem;
+    background-color: var(--main-text);
+  }
+
+  /*
+  =Overview Section
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem; padding-right: 4rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  .overview p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: var(--main-text);
+  }
+  .overview p em {
+    font-weight: 600 !important;
+  }
+
+  /*
+  =Idea Section
+  =================================== */
+  .idea {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem; padding-right: 4rem; padding-bottom: 0.5rem;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 8rem; padding-bottom: 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  .idea p {
+    display: inline-block;
+    padding-top: 0.5rem; padding-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--main-text);
+  }
+  /*
+  =Mark Development Section
+  =================================== */
+  .mark-development {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem; padding-right: 4rem; padding-bottom: 0.5rem;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  .mark {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .mark figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mark img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .mark a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  .mark-animation {
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+  .mark-animation img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .mark-animation a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  /*
+  =System Section
+  =================================== */
+  .system {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem; padding-right: 4rem; padding-bottom: 0.5rem;
+  }
+  #section4 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  .system-list {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .system-list figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .system-list img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  /*
+  =Application Section
+  =================================== */
+  .application {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem; padding-right: 4rem; padding-bottom: 0.5rem;
+  }
+  #section5 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  /* Stationery
+  =================================== */
+  .stationery {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+  .stationery p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.75rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .stationery img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .stationery a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  /* Print Ad
+  =================================== */
+  .print-ad {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+  }
+  .print-ad p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.75rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .print-ad-sample {
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+  .print-ad-sample figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .print-ad-sample img {
+    display: inline-block;
+    padding: 0.5rem;
+  }
+  .print-ad-sample a {
+    display: inline-block;
+    padding-top: 0.5rem; padding-bottom: 4rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+  /* Award Mark
+  =================================== */
+  .award {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .award p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .award figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  .award ul {
+    display: flex;
+    flex: column;
+    padding: 0.25rem;
+  }
+  .award img {
+    display: inline-block;
+    padding-left: 0.25rem; padding-right: 0.25rem;
+  }
+  /* Website
+  =================================== */
+  .website {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .website p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.75rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .website img {
+    display: inline-block;
+    padding: 0.25rem;
+    margin-top:-1rem;
+  }
+  /* Instagram Posts
+  =================================== */
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Instagram Profile */
+  .ins-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.75rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: var(--main-text)
+  }
+  .ins-profile {
+    display: flex;
+    flex-direction: row;
+  }
+  .ins-sample {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ins-sample img, .ins-sample figcaption {
+    width: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .ins-sample figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-sample p {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--main-text);
+  }
+  /* Instagram Highlight */
+  .ins-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  .highlight-icon {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: var(--main-text);
+  }
+  .iconography {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .ins-highlight figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-highlight img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .ins-highlight p {
+    display: inline-block;
+    margin-top: -3rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+  /* Instagram Post */
+  .ins-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .ins-post p {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    color: var(--main-text);
+  }
+  .ins-post figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .ins-post img {
+    width: 300px;
+    display: inline-block;
+    padding: 1.5rem;
+  }
+}
+/*
+= Resonsive - Small Screen (Max-width: 560px)
+====================================================  */
+@media (max-width: 560px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    padding-top: 25rem;
+    padding-bottom: 25rem;
+    background-color: var(--main-text);
+  }
+
+  /*
+  =Overview Section
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem; padding-right: 1rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  .overview p {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+    color: var(--main-text);
+  }
+  .overview p em {
+    font-weight: 600 !important;
+  }
+
+  /*
+  =Idea Section
+  =================================== */
+  .idea {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem; padding-right: 1rem; padding-bottom: 0.5rem;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 8rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  .idea p {
+    display: inline-block;
+    padding-top: 0.5rem; padding-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: var(--main-text);
+  }
+  /*
+  =Mark Development Section
+  =================================== */
+  .mark-development {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem; padding-right: 1rem; padding-bottom: 0.5rem;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  .mark {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .mark figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mark img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .mark a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+  .mark-animation {
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+  .mark-animation img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .mark-animation a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+  /*
+  =System Section
+  =================================== */
+  .system {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem; padding-right: 1rem; padding-bottom: 0.5rem;
+  }
+  #section4 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  .system-list {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .system-list figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .system-list img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  /*
+  =Application Section
+  =================================== */
+  .application {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem; padding-right: 1rem; padding-bottom: 0.5rem;
+  }
+  #section5 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--red-rgb);
+  }
+  /* Stationery
+  =================================== */
+  .stationery {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+  .stationery p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.57rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .stationery img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  /* Print Ad
+  =================================== */
+  .print-ad {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+  }
+  .print-ad p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .print-ad-sample {
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+  .print-ad-sample figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .print-ad-sample img {
+    display: inline-block;
+    padding: 0.5rem;
+  }
+  .print-ad-sample a {
+    display: inline-block;
+    padding-top: 0.5rem; padding-bottom: 4rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+  }
+  /* Award Mark
+  =================================== */
+  .award {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .award p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .award figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  .award ul {
+    display: flex;
+    flex: column;
+    padding: 0.25rem;
+  }
+  .award img {
+    display: inline-block;
+    padding-left: 0.25rem; padding-right: 0.25rem;
+  }
+  /* Website
+  =================================== */
+  .website {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .website p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .website img {
+    display: inline-block;
+    padding: 0.25rem;
+    margin-top: -1rem;
+  }
+  /* Instagram Posts
+  =================================== */
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Instagram Profile */
+  .ins-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: var(--main-text)
+  }
+  .ins-profile {
+    display: flex;
+    flex-direction: row;
+  }
+  .ins-sample {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ins-sample img, .ins-sample figcaption {
+    width: 160px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .ins-sample figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-sample p {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: var(--main-text);
+  }
+  .profile-name {
+    margin-right: -1rem;
+  }
+  .description {
+    margin-left: -1rem;
+  }
+  /* Instagram Highlight */
+  .ins-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  .highlight-icon {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--main-text);
+  }
+  .iconography {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .ins-highlight figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-highlight img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .ins-highlight p {
+    display: inline-block;
+    margin-top: -3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+  /* Instagram Post */
+  .ins-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .ins-post p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--main-text);
+  }
+  .ins-post figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-post img {
+    width: 160px;
+    display: inline-block;
+    padding: 1rem;
+  }
+}

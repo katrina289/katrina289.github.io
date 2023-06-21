@@ -1,0 +1,1013 @@
+/*
+=Netflix Style
+=================================== */
+:root {
+  --netflix-red: #E50817;
+  --main-text: #000000;
+  --white-text: #FFFFFF;
+}
+/*
+= Large Screen (Min-width: 981px)
+====================================================  */
+@media (min-width: 981px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--main-text);
+  }
+  /*
+  =Challenge Section
+  =================================== */
+  .challenge {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .challenge p {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  /*
+  =Solution Section
+  =================================== */
+  .solution {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .solution p {
+    font-size: 1.75rem;
+    line-height: 1.75;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  /*
+  =Buddies Section
+  =================================== */
+  .buddies {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .buddies-description {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem; padding-bottom: 1rem;
+  }
+  .buddies-description figure {
+    display: flex;
+    align-items: flex-start;
+  }
+  .buddies-description img {
+    display: flex;
+    align-items: flex-start;
+  }
+  .descript {
+    margin-top: -2rem;
+    width: 200rem;
+  }
+  /*
+  =New Feature Section
+  =================================== */
+  .new-feature {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: var(--main-text)
+  }
+  #section4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem; padding-right: 10rem;
+    padding-top: 2rem; padding-bottom: 2rem;
+  }
+  .feature-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 5rem;
+  }
+  .feature-description h1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+    padding-left: 4rem;
+  }
+  .feature-description p {
+    font-size: 1.75rem;
+    line-height: 1.75;
+    font-weight: 400;
+    color: var(--white-text);
+    padding-bottom: 1rem; padding-right: 3rem;
+    text-transform: none;
+  }
+  .prototype {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .prototype img {
+    width: 416px;
+    display: inline-block;
+    padding: 1.5rem;
+  }
+  /*
+  =Instagram Post
+  =================================== */
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Instagram Profile */
+  .instagram-prototype{
+    display: flex;
+    flex-direction: row;
+  }
+  #section5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem; padding-right: 10rem;
+    padding-top: 6rem; padding-bottom: 4rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .ins-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-sample {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ins-sample img, .ins-sample figcaption {
+    width: 416px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .ins-sample figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-name {
+    display: inline-block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: var(--netflix-red);
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .description p{
+    display: inline-block;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--main-text);
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+  /* Instagram Highlight Iconography */
+  .ins-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .highlight-icon{
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .iconography {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 10rem;
+  }
+  .ins-highlight figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-highlight img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .iconography p {
+    display: inline-block;
+    margin-top: -5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+  /* Instagram Highlight Samples */
+  .highlight-samples {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 10rem;
+    justify-content: center;
+  }
+  .highlight-samples figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .highlight-samples img {
+    display: inline-block;
+    padding: 1.5rem;
+  }
+  #highlight1 {
+    width: 546px;
+    margin-top: 2rem;
+  }
+  #highlight2 {
+    width: 416px;
+  }
+  .highlight-samples p {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1rem;
+  }
+  #desc1 {
+    margin-top: 3rem;
+  }
+  /* Commercial Video */
+  .tvc {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+  }
+  .tvc h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem; padding-bottom: 4rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .tvc iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-bottom: 5rem;
+  }
+}
+/*
+= Resonsive - Small Screen (Max-width: 980px)
+====================================================  */
+@media (max-width: 980px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 12rem;
+    padding-top: 15rem; padding-bottom: 15rem;
+    background-color: var(--main-text);
+  }
+  /*
+  =Challenge Section
+  =================================== */
+  .challenge {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .challenge p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  /*
+  =Solution Section
+  =================================== */
+  .solution {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .solution p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  /*
+  =Buddies Section
+  =================================== */
+  .buddies {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .buddies-description {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem; padding-bottom: 1rem;
+  }
+  .buddies-description figure {
+    display: flex;
+    align-items: flex-start;
+  }
+  .buddies-description img {
+    display: flex;
+    align-items: flex-start;
+  }
+  .buddies-description {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem; padding-bottom: 1rem;
+  }
+  .buddies-description figure {
+    display: flex;
+    align-items: flex-start;
+  }
+  .buddies-description img {
+    display: flex;
+    align-items: flex-start;
+  }
+  .descript {
+    margin-top: -2rem;
+    margin-left: -2rem;
+    width: 200rem;
+  }
+  .mybuddies {
+    z-index: 1;
+  }
+  /*
+  =New Feature Section
+  =================================== */
+  .new-feature {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: var(--main-text)
+  }
+  #section4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem; padding-right: 5rem;
+    padding-top: 2rem; padding-bottom: 2rem;
+  }
+  .feature-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 1rem;
+  }
+  .feature-description h1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+    padding-left: 4rem;
+  }
+  .feature-description p {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    font-weight: 400;
+    color: var(--white-text);
+    padding-bottom: 1rem;
+    text-transform: none;
+  }
+  .prototype {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .prototype img {
+    width: 300px;
+    display: inline-block;
+    padding: 1.5rem;
+  }
+  /*
+  =Instagram Post
+  =================================== */
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Instagram Profile */
+  .instagram-prototype{
+    display: flex;
+    flex-direction: row;
+  }
+  #section5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem; padding-right: 5rem;
+    padding-top: 6rem; padding-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .ins-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-sample {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ins-sample img, .ins-sample figcaption {
+    width: 250px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .ins-sample figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-name {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: var(--netflix-red);
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .description p{
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: var(--main-text);
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+  /* Instagram Highlight Iconography */
+  .ins-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem 3rem;
+  }
+  .highlight-icon{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .iconography {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 3rem;
+  }
+  .ins-highlight figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-highlight img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .iconography p {
+    display: inline-block;
+    margin-top: -20rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1rem;
+  }
+  /* Instagram Highlight Samples */
+  .highlight-samples {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .highlight-samples figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .highlight-samples img {
+    display: inline-block;
+    padding: 1.5rem;
+  }
+  #highlight1{
+    width: 315px;
+  }
+  #highlight2 {
+    width: 245px;
+    margin-top: -2rem
+  }
+  .highlight-samples p {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1rem;
+  }
+  /* Commercial Video */
+  .tvc {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+  }
+  .tvc h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem; padding-bottom: 4rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .tvc iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-bottom: 5rem;
+  }
+}
+/*
+= Resonsive - Small Screen (Max-width: 560px)
+====================================================  */
+@media (max-width: 560px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    padding-top: 25rem;
+    padding-bottom: 25rem;
+    background-color: var(--main-text);
+  }
+  /*
+  =Challenge Section
+  =================================== */
+  .challenge {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 10rem; padding-bottom: 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .challenge p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  /*
+  =Solution Section
+  =================================== */
+  .solution {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 10rem; padding-bottom: 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .solution p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  /*
+  =Buddies Section
+  =================================== */
+  .buddies {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+    align-items: flex-start;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 10rem; padding-bottom: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .buddies-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1rem; padding-bottom: 1rem;
+  }
+  .buddies-description figure {
+    display: flex;
+    align-items: flex-start;
+  }
+  .buddies-description img {
+    display: flex;
+    align-items: flex-start;
+  }
+  .buddies-description {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem; padding-bottom: 1rem;
+  }
+  .buddies-description figure {
+    display: flex;
+    align-items: flex-start;
+  }
+  .buddies-description img {
+    display: flex;
+    align-items: flex-start;
+  }
+  .mybuddies {
+    width: 450px;
+    z-index: 1;
+  }
+  .descript {
+    width: 100vw;
+    margin-left: -9rem;
+  }
+  /*
+  =New Feature Section
+  =================================== */
+  .new-feature {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: var(--main-text)
+  }
+  #section4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem; padding-right: 1rem;
+    padding-top: 2rem; padding-bottom: 2rem;
+  }
+  .feature-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 2rem;
+  }
+  .feature-description h1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+    padding-left: 4rem;
+  }
+  .feature-description p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--white-text);
+    padding-top: 2rem;
+    text-transform: none;
+  }
+  .prototype {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+  }
+  .prototype img {
+    width: 250px;
+    display: inline-block;
+    padding: 1.5rem;
+  }
+  /*
+  =Instagram Post
+  =================================== */
+  .instagram {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Instagram Profile */
+  .instagram-prototype{
+    display: flex;
+    flex-direction: row;
+  }
+  #section5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem; padding-right: 2rem;
+    padding-top: 6rem; padding-bottom: 4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .ins-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-sample {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ins-sample img, .ins-sample figcaption {
+    width: 175px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .ins-sample figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-name {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: var(--netflix-red);
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .description p {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 0.5rem;
+    color: var(--main-text);
+    text-align: center;
+  }
+  /* Instagram Highlight Iconography */
+  .ins-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .highlight-icon{
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+  .iconography {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 2rem;
+  }
+  .ins-highlight figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ins-highlight img {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .iconography p {
+    display: inline-block;
+    margin-top: -10rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+  /* Instagram Highlight Samples */
+  .highlight-samples {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem; padding-bottom: 2rem;
+    padding-left: 4.5rem; padding-right: 2rem;
+  }
+  .highlight-samples figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .highlight-samples img {
+    display: inline-block;
+    padding: 1.5rem;
+  }
+  #highlight1 {
+    width: 222px;
+    margin-top: 1.25rem;
+  }
+  #highlight2 {
+    width: 175px;
+  }
+  .highlight-samples p {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+  }
+  #desc1 {
+    margin-top: 1rem;
+  }
+  /* Commercial Video */
+  .tvc {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+  }
+  .tvc h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem; padding-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--netflix-red);
+  }
+  .tvc iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-bottom: 5rem;
+  }
+}

@@ -1,0 +1,614 @@
+/*
+=The story of Newspaper Style
+=================================== */
+:root {
+  --main-text: #000000;
+  --lower-transperant-text: rgba(0, 0, 0, 0.5);
+}
+
+/*
+= Large Screen (Min-width: 981px)
+====================================================  */
+@media (min-width: 981px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 2rem;
+  }
+  .banner img {
+    display: flex;
+    height: 695px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /*
+  =Overview
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 1rem;
+    justify-content: center;
+  }
+  #section1 {
+    display: flex;
+    padding-top: 6rem; padding-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+    justify-content: center;
+  }
+  .overview ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .overview p, h2, a {
+    font-size: 1.75rem;
+    line-height: 3.25rem;
+    color: var(--lower-transperant-text);
+    padding-bottom: 1.5rem;
+  }
+  .overview p em {
+    font-weight: 700;
+  }
+  .overview div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .overview h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .overview a {
+    font-weight: 600;
+  }
+  .overview p {
+    padding-bottom: 1.5rem;
+  }
+  .description {
+    text-transform: uppercase !important;
+  }
+  /*
+  =Artifacts Remake Section
+  =================================== */
+  .artifacts-remake {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 0.5rem;
+    padding-left: 10rem; padding-right: 10rem;
+  }
+  #section2 {
+    display: flex;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--main-text);
+    justify-content: center;
+  }
+  .slider {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .slider input {
+    display: none;
+  }
+  .artifacts {
+    display: flex;;
+    width: 100%;
+  }
+  .artifacts img {
+    height: 100%;
+    width: 100%;
+  }
+  .gallery-nav {
+    display:flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  .gallery-nav  label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid var(--lower-transperant-text) 1.5px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+  }
+  .dots:hover {background-color: var(--lower-transperant-text);}
+  #art1:checked ~ .artifacts > .art-img1 {
+    margin-left: 0;
+  }
+  #art2:checked ~ .artifacts > .art-img2 {
+    margin-left: -100%;
+  }
+  #art3:checked ~ .artifacts > .art-img3 {
+    margin-left: -200%;
+  }
+  #art4:checked ~ .artifacts > .art-img4 {
+    margin-left: -300%;
+  }
+  #art5:checked ~ .artifacts > .art-img5 {
+    margin-left: -400%;
+  }
+  #art1:checked ~ .gallery-nav #dot1,
+  #art2:checked ~ .gallery-nav #dot2,
+  #art3:checked ~ .gallery-nav #dot3,
+  #art4:checked ~ .gallery-nav #dot4,
+  #art5:checked ~ .gallery-nav #dot5 {
+    background-color: var(--lower-transperant-text);
+  }
+  /*
+  =Book Design Section
+  =================================== */
+  .book-design {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+  }
+  #section3 {
+    display: flex;
+    padding-top: 6rem; padding-bottom: 4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+    justify-content: center;
+  }
+  .book-design iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-left: 18rem; padding-right: 18rem; padding-bottom: 5rem;
+  }
+
+  /*
+  =Mock-up Section
+  =================================== */
+  .mock-up {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10rem; padding-right: 10rem;
+    padding-bottom: 0.5rem;
+  }
+  #section4 {
+    display: flex;
+    padding-top: 6rem; padding-bottom: 4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+    justify-content: center;
+  }
+}
+
+/*
+= Large Screen (Max-width: 980px)
+====================================================  */
+@media (max-width: 980px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 12rem;
+  }
+  .banner img {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /*
+  =Overview
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 1rem;
+    justify-content: center;
+  }
+  #section1 {
+    display: flex;
+    padding-top: 6rem; padding-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+    justify-content: center;
+  }
+  .overview ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .overview p, h2, a {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: var(--lower-transperant-text);
+    padding-bottom: 1.5rem;
+  }
+  .overview p em {
+    font-weight: 700;
+  }
+  .overview div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .overview h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .overview a {
+    font-weight: 600;
+  }
+  .overview p {
+    padding-bottom: 1.5rem;
+  }
+  .description {
+    text-transform: uppercase !important;
+  }
+  /*
+  =Artifacts Remake Section
+  =================================== */
+  .artifacts-remake {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 0.5rem;
+    padding-left: 5rem; padding-right: 5rem;
+  }
+  #section2 {
+    display: flex;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+    justify-content: center;
+  }
+  .slider {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .slider input {
+    display: none;
+  }
+  .artifacts {
+    display: flex;;
+    width: 100%;
+  }
+  .artifacts img {
+    height: 100%;
+    width: 100%;
+  }
+  .gallery-nav {
+    display:flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  .gallery-nav  label {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: solid var(--lower-transperant-text) 1.5px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+  }
+  .dots:hover {background-color: var(--lower-transperant-text);}
+  #art1:checked ~ .artifacts > .art-img1 {
+    margin-left: 0;
+  }
+  #art2:checked ~ .artifacts > .art-img2 {
+    margin-left: -100%;
+  }
+  #art3:checked ~ .artifacts > .art-img3 {
+    margin-left: -200%;
+  }
+  #art4:checked ~ .artifacts > .art-img4 {
+    margin-left: -300%;
+  }
+  #art5:checked ~ .artifacts > .art-img5 {
+    margin-left: -400%;
+  }
+  #art1:checked ~ .gallery-nav #dot1,
+  #art2:checked ~ .gallery-nav #dot2,
+  #art3:checked ~ .gallery-nav #dot3,
+  #art4:checked ~ .gallery-nav #dot4,
+  #art5:checked ~ .gallery-nav #dot5 {
+    background-color: var(--lower-transperant-text);
+  }
+  /*
+  =Book Design Section
+  =================================== */
+  .book-design {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+  }
+  #section3 {
+    display: flex;
+    padding-top: 6rem; padding-bottom: 4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+    justify-content: center;
+  }
+  .book-design iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 5rem;
+  }
+  /*
+  =Mock-up Section
+  =================================== */
+  .mock-up {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem; padding-right: 5rem;
+    padding-bottom: 0.5rem;
+  }
+  #section4 {
+    display: flex;
+    padding-top: 8rem; padding-bottom: 4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+    justify-content: center;
+  }
+}
+
+/*
+= Large Screen (Max-width: 560px)
+====================================================  */
+@media (max-width: 560px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 12rem;
+  }
+  .banner img {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /*
+  =Overview
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 1rem;
+    justify-content: center;
+  }
+  #section1 {
+    display: flex;
+    padding-top: 6rem; padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+    justify-content: center;
+  }
+  .overview ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .overview p, h2, a {
+    font-size: 1.25rem;
+    line-height: 3rem;
+    color: var(--lower-transperant-text);
+    padding-bottom: 1.5rem;
+  }
+  .overview p em {
+    font-weight: 700;
+  }
+  .overview div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .overview h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .overview a {
+    font-weight: 600;
+  }
+  .overview p {
+    padding-bottom: 1.5rem;
+  }
+  .description {
+    text-transform: uppercase !important;
+  }
+  /*
+  =Artifacts Remake Section
+  =================================== */
+  .artifacts-remake {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem; padding-right: 2rem;
+  }
+  #section2 {
+    display: flex;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+    justify-content: center;
+  }
+  .slider {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .slider input {
+    display: none;
+  }
+  .artifacts {
+    display: flex;;
+    width: 100%;
+  }
+  .artifacts img {
+    height: 100%;
+    width: 100%;
+  }
+  .gallery-nav {
+    display:flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  .gallery-nav  label {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: solid var(--lower-transperant-text) 1.5px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+  }
+  .dots:hover {background-color: var(--lower-transperant-text);}
+  #art1:checked ~ .artifacts > .art-img1 {
+    margin-left: 0;
+  }
+  #art2:checked ~ .artifacts > .art-img2 {
+    margin-left: -100%;
+  }
+  #art3:checked ~ .artifacts > .art-img3 {
+    margin-left: -200%;
+  }
+  #art4:checked ~ .artifacts > .art-img4 {
+    margin-left: -300%;
+  }
+  #art5:checked ~ .artifacts > .art-img5 {
+    margin-left: -400%;
+  }
+  #art1:checked ~ .gallery-nav #dot1,
+  #art2:checked ~ .gallery-nav #dot2,
+  #art3:checked ~ .gallery-nav #dot3,
+  #art4:checked ~ .gallery-nav #dot4,
+  #art5:checked ~ .gallery-nav #dot5 {
+    background-color: var(--lower-transperant-text);
+  }
+  /*
+  =Book Design Section
+  =================================== */
+  .book-design {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+  }
+  #section3 {
+    display: flex;
+    padding-top: 6rem; padding-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+    justify-content: center;
+  }
+  .book-design iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 5rem;
+  }
+  /*
+  =Mock-up Section
+  =================================== */
+  .mock-up {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem; padding-right: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  #section4 {
+    display: flex;
+    padding-top: 8rem; padding-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    color: var(--main-text);
+    justify-content: center;
+  }
+}
