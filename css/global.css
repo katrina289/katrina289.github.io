@@ -7,7 +7,7 @@
   font-size: 62.5%; /* make the default size = 10px */
   -webkit-text-size-adjust: 100%; /* prevent fonr scaling in lanscape while allowing the user zoom on mobile */
   --pink-text: #ffa891;
-  --blue-gray-text: #5b838d;
+  --blue-gray-text: #6f7b82;
   --dark-gray-text: #4d4d4d;
   --main-bg-color: #FFFFFF;
 }
