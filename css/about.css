@@ -1,6 +1,13 @@
 :root {
   --main-text: #000000;
 }
+
+#about {
+  text-decoration: underline !important;
+  text-underline-offset: 20% !important;
+  color: var(--blue-gray-text) !important;
+}
+
 /*
 = Large Screen (Min-width: 981px)
 ====================================================  */
