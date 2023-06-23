@@ -199,32 +199,6 @@
   .document img {
     width: 33%;
   }
-  /* Introduction Page */
-  .introduction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10rem; padding-right: 10rem;
-    padding-top: 2rem; padding-bottom: 2rem;
-  }
-  .introduction p {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 2.5rem;
-    text-transform: uppercase;
-    color: var(--nude-yellow);
-  }
-  .intro-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-  }
-  .intro-page img {
-    width: 60%;
-  }
-
   /* Case Analysis */
   .case-analysis {
     display: flex;
@@ -275,7 +249,7 @@
     padding: 2rem;
   }
   .intro-page img {
-    width: 80%;
+    width: 60%;
   }
 
   /*
@@ -455,7 +429,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 10rem; padding-right: 10rem;
+    padding-left: 5rem; padding-right: 5rem;
     padding-top: 2rem; padding-bottom: 2rem;
   }
   .landing p {
@@ -469,13 +443,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
   }
   .landing-page img {
-    width: 60%;
+    width: 100%;
   }
-  /* Main Page */
-  .main-page {
+  /* Inital Look */
+  .initial-look {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -483,23 +456,50 @@
     padding-left: 5rem; padding-right: 5rem;
     padding-top: 2rem; padding-bottom: 2rem;
   }
-  .main-page p {
+  .initial-look p {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 2.5rem;
     text-transform: uppercase;
     color: var(--nude-yellow);
   }
-  .user-experience {
+  .document {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
   }
-  .user-experience img {
-    width: 45%;
+  .document img {
+    width: 75%;
+  }
+  /* Case Analysis */
+  .case-analysis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5rem; padding-right: 5rem;
+    padding-top: 2rem; padding-bottom: 2rem;
+  }
+  .case-analysis p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--nude-yellow);
+  }
+  .analysis-step {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .analysis-step img {
+    width: 75%;
   }
   /* Introduction Page */
   .introduction {
@@ -521,10 +521,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
   }
   .intro-page img {
-    width: 60%;
+    width: 100%;
   }
 
   /*
@@ -703,12 +702,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem
   }
   .landing p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     text-transform: uppercase;
     color: var(--nude-yellow);
   }
@@ -716,36 +715,61 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
   }
   .landing-page img {
-    width: 90%;
+    width: 100%;
   }
-  /* Main Page */
-  .main-page {
+  /* Inital Look */
+  .initial-look {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2rem;
   }
-  .main-page p {
-    font-size: 1.5rem;
+  .initial-look p {
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     text-transform: uppercase;
     color: var(--nude-yellow);
   }
-  .user-experience {
+  .document {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+  }
+  .document img {
+    width: 100%;
+  }
+  /* Case Analysis */
+  .case-analysis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 2rem;
   }
-  .user-experience img {
-    width: 90%;
+  .case-analysis p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--nude-yellow);
+  }
+  .analysis-step {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .analysis-step img {
+    width: 100%;
   }
   /* Introduction Page */
   .introduction {
@@ -756,9 +780,9 @@
     padding: 2rem;
   }
   .introduction p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     text-transform: uppercase;
     color: var(--nude-yellow);
   }
@@ -766,10 +790,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
   }
   .intro-page img {
-    width: 90%;
+    width: 100%;
   }
 
   /*
