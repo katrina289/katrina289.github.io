@@ -42,7 +42,7 @@
   transition-timing-function: ease-in-out;
 }
 .gallery a:hover {
-  background-color: rgba(91, 131, 141, 1);
+  background-color: var(--blue-gray-text);
   color: white;
 }
 
