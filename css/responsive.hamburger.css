@@ -182,7 +182,7 @@
   =style the logo (Large screen)
   =================================== */
   .logo {
-    top: 2rem; left: 5rem;
+    top: 4rem; left: 5rem;
     width: 100px;
     position: absolute;
     z-index: 60;
@@ -205,8 +205,8 @@
   =style the checkbox + Hamburger */
   .checkbox,
   .hamburger {
-    height: 4.5rem; /* assign a height to the checkbox + hamburger */
-    width: 4.5rem; /* assign a width to the checkbox  hamburger */
+    height: 5.5rem; /* assign a height to the checkbox + hamburger */
+    width: 5.5rem; /* assign a width to the checkbox  hamburger */
     position: absolute; /* posotion the checkbox + hamburger from the top right sides of the viewpoint */
     top: 2.5rem; right: 3rem;
   }
@@ -243,7 +243,7 @@
   .wrapper .line::before,
   .wrapper .line::after {
     background-color: var(--pink-text);
-    height: 0.15rem;
+    height: 0.2rem;
     width: 100%;
   }
   /*
@@ -261,8 +261,8 @@
   }
   /*
   =offset the pseudo lines above + below the centerline */
-  .wrapper .line::before {top: -0.7rem;} /* offset the before pseudo line 7 pixels above the centerline */
-  .wrapper .line::after {top: 0.7rem;} /* offset the after pseudo line 7 pixels below the centerline */
+  .wrapper .line::before {top: -1.25rem;} /* offset the before pseudo line 7 pixels above the centerline */
+  .wrapper .line::after {top: 1.25rem;} /* offset the after pseudo line 7 pixels below the centerline */
   /*
   =rotaate the wrapper 135deg clockwise */
   .checkbox:checked + .hamburger .wrapper {
@@ -335,7 +335,7 @@
   /*
   =set typeface for page link */
   .link a {
-    font-size: 2.05rem;
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: 1;
   }
