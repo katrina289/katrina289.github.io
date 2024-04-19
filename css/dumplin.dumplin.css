@@ -1,0 +1,220 @@
+/*
+=Netflix Style
+=================================== */
+:root {
+  --main-text: #000000;
+  --white-text: #FFFFFF;
+  --dumplin-red: #a72d23;
+  --background: #231F20;
+}
+
+/*
+= Large Screen (Min-width: 981px)
+====================================================  */
+/*
+=Banner Section
+=================================== */
+.banner {
+  margin-top: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #f3dec4;
+}
+/*
+=Overview
+=================================== */
+.overview {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem; padding-right: 4rem; padding-bottom: 0.5rem;
+  justify-content: flex-end;
+}
+#section1 {
+  display: inline-block;
+  padding-top: 6rem; padding-bottom: 0.75rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2;
+  text-transform: uppercase;
+  color: var(--dumplin-red);
+}
+.overview p {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: var(--main-text);
+  padding-bottom: 1.5rem;
+}
+.overview p em {
+  font-weight: 600;
+}
+/*
+= Section 2 Concept
+=================================== */
+.concept {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem; padding-right: 4rem; padding-bottom: 0.5rem;
+}
+#section2 {
+  display: inline-block;
+  padding-top: 6rem; padding-bottom: 0.75rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2;
+  text-transform: uppercase;
+  color: var(--dumplin-red);
+}
+.concept p {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: var(--main-text);
+  padding-bottom: 1.5rem;
+}
+.concept p em {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  padding: 0.75rem;
+  margin-left: 0.75rem; margin-right: 0.75rem;
+  margin-top: -0.75rem;
+  color: var(--white-text);
+  background-color: var(--main-text)
+}
+/*
+=INSTGRAM
+=================================== */
+.instagram {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem; padding-right: 4rem; padding-bottom: 0.5rem;
+}
+#section3 {
+  display: inline-block;
+  padding-top: 6rem; padding-bottom: 0.75rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2;
+  text-transform: uppercase;
+  color: var(--dumplin-red);
+}
+.graphic, .motion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+.ins-still, .ins-motion {
+  display: flex;
+  flex direction: row;
+  padding-left: 4rem; padding-right: 4rem; padding-bottom: 0.5rem; padding-top: 2rem;
+}
+.ins-still figure, .ins-motion figure {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.ins-still img, .ins-motion img  {
+  width: 500px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.graphic p, .motion p {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--main-text);
+}
+/*
+=Section 2 Pattern
+=================================== */
+.social-pattern {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+.pattern {
+  display: flex;
+  flex direction: row;
+  padding-left: 4rem; padding-right: 4rem; padding-bottom: 0.5rem; padding-top: 2rem;
+}
+.pattern figure {
+  display flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#menu-pattern {
+  display: inline-block;
+  padding-right: 4rem;
+}
+#promotion-pattern {
+  display: inline-block;
+  padding-left: 4rem;
+}
+.pattern  figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pattern p {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  color: var(--main-text);
+}
+#pattern-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--main-text);
+}
+/*
+=Reels & Tiktok
+=================================== */
+.tiktok {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem; padding-right: 4rem; padding-bottom: 0.5rem;
+}
+#section4 {
+  display: inline-block;
+  padding-top: 6rem; padding-bottom: 0.75rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2;
+  text-transform: uppercase;
+  color: var(--dumplin-red);
+}
+.videos {
+  display: flex;
+  flex direction: row;
+  padding-bottom: 0.5rem;
+}
+.videos figure {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.videos iframe {
+  width: 600px;
+  display: inline-block;
+  box-sizing: border-box;
+}
