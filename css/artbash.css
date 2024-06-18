@@ -44,6 +44,7 @@
     line-height: 1.75;
     font-weight: 400;
     color: var(--main-text);
+    padding-bottom: 2rem;
   }
 
   /*
@@ -315,6 +316,7 @@
     line-height: 3.5rem;
     font-weight: 400;
     color: var(--main-text);
+    padding-bottom: 2rem;
   }
 
   /*
@@ -579,6 +581,7 @@
     line-height: 3.25rem;
     font-weight: 400;
     color: var(--main-text);
+    padding-bottom: 2rem;
   }
 
   /*
