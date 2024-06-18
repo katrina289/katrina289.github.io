@@ -41,6 +41,7 @@
     line-height: 1.75;
     font-weight: 400;
     color: var(--main-text);
+    padding-bottom: 2rem;
   }
   .overview p em {
     font-weight: 600 !important;
@@ -468,6 +469,7 @@
     line-height: 2.5rem;
     font-weight: 400;
     color: var(--main-text);
+    padding-bottom: 2rem;
   }
   .overview p em {
     font-weight: 600 !important;
@@ -895,6 +897,7 @@
     line-height: 2.25rem;
     font-weight: 400;
     color: var(--main-text);
+    padding-bottom: 2rem;
   }
   .overview p em {
     font-weight: 600 !important;
