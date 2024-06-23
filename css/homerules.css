@@ -1,0 +1,402 @@
+/*
+=Netflix Style
+=================================== */
+:root {
+  --main-text: #000000;
+  --white-text: #FFFFFF;
+  --purple: #8C2E94;
+}
+/*
+= Large Screen (Min-width: 981px)
+====================================================  */
+@media (min-width: 981px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 2rem;
+  }
+  .banner img {
+    display: flex;
+    height: 695px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /*
+  =Overview Section
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  .overview p {
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  .overview p em {
+    font-weight: 600;
+  }
+  /*
+  =User Scenario Section
+  =================================== */
+  .scenario {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  /*
+  =App Structure Section
+  =================================== */
+  .structure {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  /*
+  =User Flighpath Section
+  =================================== */
+  .flightpath {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 10rem;
+  }
+  #section4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10rem; padding-right: 10rem;
+    padding-top: 2rem; padding-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  .flightpath iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 5rem;
+  }
+
+  /*
+  =Trailer Section
+  =================================== */
+  .trailer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 10rem;
+  }
+  #section5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10rem; padding-right: 10rem;
+    padding-top: 2rem; padding-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  .trailer iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-left: 10rem; padding-right: 10rem; padding-bottom: 0.5rem;
+  }
+}
+
+/*
+= Resonsive - Small Screen (Max-width: 980px)
+====================================================  */
+@media (max-width: 980px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 12rem;
+  }
+  .banner img {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /*
+  =Overview Section
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem; padding-right: 4rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  .overview p {
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  .overview p em {
+    font-weight: 600;
+  }
+  /*
+  =User Scenario Section
+  =================================== */
+  .scenario {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section2 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  /*
+  =App Structure Section
+  =================================== */
+  .structure {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  /*
+  =User Flighpath Section
+  =================================== */
+  .flightpath {
+    dwidth: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section4 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  .flightpath iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 5rem;
+  }
+
+  /*
+  =Trailer Section
+  =================================== */
+  .trailer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 10rem;
+  }
+  #section5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  .trailer iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-left: 5rem; padding-right: 5rem; padding-bottom: 0.5rem;
+  }
+}
+/*
+= Resonsive - Small Screen (Max-width: 560px)
+====================================================  */
+@media (max-width: 560px) {
+  /*
+  =Banner Section
+  =================================== */
+  .banner {
+    margin-top: 12rem;
+  }
+  .banner img {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /*
+  =Overview Section
+  =================================== */
+  .overview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+    justify-content: flex-end;
+  }
+  #section1 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  .overview p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: var(--main-text);
+    padding-bottom: 1.5rem;
+  }
+  .overview p em {
+    font-weight: 600;
+  }
+  /*
+  =App Structure Section
+  =================================== */
+  .structure {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: flex-end;
+  }
+  #section3 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  /*
+  =User Flighpath Section
+  =================================== */
+  .flightpath {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: flex-end;
+  }
+  #section4 {
+    display: inline-block;
+    padding-top: 6rem; padding-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  /*
+  =Trailer Section
+  =================================== */
+  .trailer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 10rem;
+  }
+  #section5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  .trailer iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-left: 2rem; padding-right: 2rem; padding-bottom: 0.5rem;
+  }
+}
